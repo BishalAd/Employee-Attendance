@@ -1,6 +1,7 @@
 <?php
 session_start();
 include 'db.php';
+date_default_timezone_set('Asia/Kathmandu');
 
 // Redirect if not logged in or not an employee
 if (!isset($_SESSION['username']) || $_SESSION['role'] != 'employee') {
