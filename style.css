@@ -1,0 +1,291 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.admin-container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+h1 {
+    margin: 0;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+nav ul li a.active {
+    color: #0056b3;
+    border-bottom: 2px solid #007BFF;
+}
+
+.dashboard-section {
+    display: none;
+}
+
+.dashboard-section.active {
+    display: block;
+}
+
+.dashboard-overview {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.overview-box {
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center;
+    margin: 60px;
+}
+
+.overview-box h3 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.overview-box p {
+    font-size: 24px;
+    margin: 10px 0 0;
+}
+
+.employee-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.employee-item {
+    background-color: #f0f8ff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.employee-actions a {
+    margin-right: 10px;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.employee-actions button {
+    background-color: #f44336;
+    color: #ffffff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.employee-actions button:hover {
+    background-color: #c62828;
+}
+
+.add-employee-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.add-employee-btn:hover {
+    background-color: #218838;
+}
+
+.add-employee-form input, .add-employee-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.add-employee-form button {
+    background-color: #007BFF;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.add-employee-form button:hover {
+    background-color: #0056b3;
+}
+
+.message-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.message-list li {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.message-list strong {
+    color: #007BFF;
+}
+
+.back-button, .logout-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    width: 15%;
+    font-size: 16px;
+    margin-top: 20px;
+    text-decoration: none;
+    margin-left: 75%;
+}
+
+.back-button:hover, .logout-button:hover {
+    background-color: #c62828;
+}
+
+.mark-holiday-btn {
+    background-color: #FFC107;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    display: block;
+}
+
+.mark-holiday-btn:hover {
+    background-color: #e0a800;
+}
+
+
+/* Employee Today and Summary Sections */
+.employee-today-section, .employee-summary-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.employee-today-section h3, .employee-summary-section h3 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.employee-today-section ul, .employee-summary-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.employee-today-section li, .employee-summary-section li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+
+
+.employee-summary-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.employee-summary-table th, .employee-summary-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.employee-summary-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.employee-today-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.employee-today-table th,
+.employee-today-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.employee-today-table th {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.employee-today-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.employee-today-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.employee-today-table td {
+    font-size: 14px;
+}
+
+.employee-today-table th {
+    font-size: 16px;
+    font-weight: bold;
+}

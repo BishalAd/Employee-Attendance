@@ -1,0 +1,144 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Admin Container */
+.admin-container {
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 20px;
+}
+
+/* Header */
+header {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+/* Employee Management Section */
+.employee-management {
+    grid-column: 1;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.employee-management h2, .attendance-section h2, .messages-section h2 {
+    margin-top: 0;
+}
+
+.add-employee-form input, .add-employee-form button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+}
+
+.employee-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.remove-btn {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.remove-btn:hover {
+    background-color: #e43d3d;
+}
+
+/* Attendance Section */
+.attendance-section {
+    grid-column: 2;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container {
+    width: 100%;
+    height: 300px;
+}
+
+/* Messages Section */
+.messages-section {
+    grid-column: 3;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.message-list li {
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+/* Employee Details Container */
+.employee-details-container {
+    width: 90%;
+    max-width: 1000px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.employee-details-container header {
+    text-align: center;
+}
+
+.attendance-records table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.attendance-records table th, .attendance-records table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.attendance-records table th {
+    background-color: #f0f0f0;
+}
+
+.chart-section {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.chart-section .chart-container {
+    width: 100%;
+    height: 300px;
+}
